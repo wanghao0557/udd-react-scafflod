@@ -1,0 +1,23 @@
+{
+  "name": "udd-react-scaffold",
+  "version": "1.0.0",
+  "description": "集成脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanghao0557/udd-react-scafflod.git"
+  },
+  "keywords": [
+    "reactApp",
+    "reacth5"
+  ],
+  "author": "cemingqingshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanghao0557/udd-react-scafflod/issues"
+  },
+  "homepage": "https://github.com/wanghao0557/udd-react-scafflod#readme"
+}
