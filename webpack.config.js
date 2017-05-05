@@ -25,7 +25,10 @@ module.exports = {
 	module: {
 		loaders: [
 			{ test: /\.(js|jsx)$/, loader: "babel" },
-			{ test: /\.(css|scss)$/, loader:extractTextWebpackPlugin.extract("style", "css!sass") }
+			{ test: /\.(css|scss)$/, loader:extractTextWebpackPlugin.extract("style", "css!sass") },
+			{ test: /\.(png|gif|jpe?g)$/, loader: 'url-loader?limit=5120&name=img/[name].[hash:8].[ext]' },
+			{ test: /\.(eot|ttf|woff2?)$/, loader: 'url-loader?limit=5120&name=fonts/[name].[hash:8].[ext]' },
+			{ test: /\.svg$/, loader: 'file-loader?name=svg/[name].[hash:8].[ext]' }
 		]
 	},
 	resolve: {

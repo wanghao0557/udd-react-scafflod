@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c3ad1cb0ed67a5d1d827"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3660a7ed5bed44688439"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -584,7 +584,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(7);
+	module.exports = __webpack_require__(8);
 
 
 /***/ }),
@@ -599,36 +599,39 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	__webpack_require__(3);
+	__webpack_require__(4);
 	
 	ReactDOM.render(React.createElement(_dianping2.default, null), document.getElementById('apps'));
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	var back = __webpack_require__(3);
+	
 	var DianPing = React.createClass({
-	  displayName: "DianPing",
+	  displayName: 'DianPing',
 	
 	  render: function render() {
 	    return React.createElement(
-	      "div",
+	      'div',
 	      null,
 	      React.createElement(
-	        "p",
+	        'p',
 	        null,
-	        "ddd"
+	        'ddd'
 	      ),
 	      React.createElement(
-	        "div",
+	        'div',
 	        null,
-	        "sd"
-	      )
+	        'sd'
+	      ),
+	      React.createElement('img', { src: back })
 	    );
 	  }
 	});
@@ -639,13 +642,19 @@
 /* 3 */
 /***/ (function(module, exports) {
 
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAqCAYAAACpxZteAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY4MENGNzgyNjA2QjExRTY4OTdFRTg3MUI3RUEyQTVDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY4MENGNzgzNjA2QjExRTY4OTdFRTg3MUI3RUEyQTVDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjgwQ0Y3ODA2MDZCMTFFNjg5N0VFODcxQjdFQTJBNUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjgwQ0Y3ODE2MDZCMTFFNjg5N0VFODcxQjdFQTJBNUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7J9EPuAAACX0lEQVR42qyXy0tVcRDHT5fbQkrQjZpdSUQUVHTjSsFEER+paeILKhBBxE24cqHQ1o3ionDjQgXDkrQ0IsE3Cr42ivYPpIIapEIa6sLvwBz4MZx7O+feGfgs7px75vt7zG/md/yBvgNL2apBLWgDN37l4KXgA3gAHoFWTYESMAPuG2JvfUrBn4EvRnCyffBOYwaVPHLT9kAZOPQpjPyT8P0EFRScfkQi8IJHHmX4tkER+GU7whWgNBwH98TIn4Nj84/hCDSDz2JD10A+OJJ/9rrJ9Zznpu3wjM6cXvAyg9cOG7oMnoLTYC+5FXgFRoRvA9SA81AvuhFoBaPCt8An9+x/L/tdBB9yCF4FLt1MPdQM2h2CL3K1vHS7ccEEOsCg8M1wAfvrJe18QYK/F7550Ej13euhkQKdDsGnQDm4CufImwJvQL94/gM0hTNyKdAFBsSzCc6W60jKLQn0gF7h/wgawG2kzYIE/jj4Y8BDjVbn401tcWje30C0hgDZMC+JaVTEVkGchoC9qS/F82xO01gNAbIxUCc2Nw+sgAQNAbJJzn3TsrhUxGsIWNwSa8QZyAWzXmcSqpp+5eUyLQfMgSQNAYtTlU7zP8OXyf5EDQFT5FpkF90kUjQELF6WWlFRk8E0CGgIkH3n++aFWC5q/ukaAhafhzrRMhN5JqkaAvZyFYPfhi8NLIEMDQGydd4Tsz8/5mXM1BCwuBAWisvuE+6CWRoC9nW9SlzAAryMORoCZFvcP04MXzwvV4HWN9omXyWPRXY1aAmQ7fL3mj0Tus92aX8nb3MVJqFuctwJMACYEHMHo67nxAAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
 	// removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 4 */,
 /* 5 */,
 /* 6 */,
-/* 7 */
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {/*eslint-env browser*/
@@ -661,7 +670,7 @@
 	  name: ''
 	};
 	if (true) {
-	  var querystring = __webpack_require__(9);
+	  var querystring = __webpack_require__(10);
 	  var overrides = querystring.parse(__resourceQuery.slice(1));
 	  if (overrides.path) options.path = overrides.path;
 	  if (overrides.timeout) options.timeout = overrides.timeout;
@@ -781,11 +790,11 @@
 	}
 	
 	function createReporter() {
-	  var strip = __webpack_require__(12);
+	  var strip = __webpack_require__(13);
 	
 	  var overlay;
 	  if (typeof document !== 'undefined' && options.overlay) {
-	    overlay = __webpack_require__(14);
+	    overlay = __webpack_require__(15);
 	  }
 	
 	  var styles = {
@@ -838,7 +847,7 @@
 	  };
 	}
 	
-	var processUpdate = __webpack_require__(20);
+	var processUpdate = __webpack_require__(21);
 	
 	var customHandler;
 	var subscribeAllHandler;
@@ -903,10 +912,10 @@
 	  };
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, "?reload=true", __webpack_require__(8)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, "?reload=true", __webpack_require__(9)(module)))
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -923,16 +932,16 @@
 	};
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	exports.decode = exports.parse = __webpack_require__(10);
-	exports.encode = exports.stringify = __webpack_require__(11);
+	exports.decode = exports.parse = __webpack_require__(11);
+	exports.encode = exports.stringify = __webpack_require__(12);
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -1021,7 +1030,7 @@
 	};
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -1090,19 +1099,19 @@
 	};
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ansiRegex = __webpack_require__(13)();
+	var ansiRegex = __webpack_require__(14)();
 	
 	module.exports = function (str) {
 		return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
 	};
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1113,7 +1122,7 @@
 	};
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1144,7 +1153,7 @@
 	  clientOverlay.style[key] = styles[key];
 	}
 	
-	var ansiHTML = __webpack_require__(15);
+	var ansiHTML = __webpack_require__(16);
 	var colors = {
 	  reset: ['transparent', 'transparent'],
 	  black: '181818',
@@ -1159,7 +1168,7 @@
 	};
 	ansiHTML.setColors(colors);
 	
-	var Entities = __webpack_require__(16).AllHtmlEntities;
+	var Entities = __webpack_require__(17).AllHtmlEntities;
 	var entities = new Entities();
 	
 	exports.showProblems = function showProblems(type, lines) {
@@ -1193,7 +1202,7 @@
 	}
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1378,20 +1387,20 @@
 	ansiHTML.reset();
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	module.exports = {
-	  XmlEntities: __webpack_require__(17),
-	  Html4Entities: __webpack_require__(18),
-	  Html5Entities: __webpack_require__(19),
-	  AllHtmlEntities: __webpack_require__(19)
+	  XmlEntities: __webpack_require__(18),
+	  Html4Entities: __webpack_require__(19),
+	  Html5Entities: __webpack_require__(20),
+	  AllHtmlEntities: __webpack_require__(20)
 	};
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1551,7 +1560,7 @@
 	module.exports = XmlEntities;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1703,7 +1712,7 @@
 	module.exports = Html4Entities;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1898,7 +1907,7 @@
 	module.exports = Html5Entities;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
