@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "todos.start": "cross-env NODE_ENV=dev ITEM_NAME=todos supervisor -w server,server.js server",
-    "todos.dev": "set ITEM_NAME=todos&&set NODE_ENV=dev&&webpack"
+    "todos.dev": "set ITEM_NAME=todos&&set NODE_ENV=dev&&webpack",
+    "todos.build": "set ITEM_NAME=todos&&webpack --config webpack.build.config.js -p"
   },
   "repository": {
     "type": "git",
