@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3660a7ed5bed44688439"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2951da65af4819cebe54"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -584,7 +584,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(8);
+	module.exports = __webpack_require__(12);
 
 
 /***/ }),
@@ -654,7 +654,11 @@
 /* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {/*eslint-env browser*/
@@ -670,7 +674,7 @@
 	  name: ''
 	};
 	if (true) {
-	  var querystring = __webpack_require__(10);
+	  var querystring = __webpack_require__(14);
 	  var overrides = querystring.parse(__resourceQuery.slice(1));
 	  if (overrides.path) options.path = overrides.path;
 	  if (overrides.timeout) options.timeout = overrides.timeout;
@@ -790,11 +794,11 @@
 	}
 	
 	function createReporter() {
-	  var strip = __webpack_require__(13);
+	  var strip = __webpack_require__(17);
 	
 	  var overlay;
 	  if (typeof document !== 'undefined' && options.overlay) {
-	    overlay = __webpack_require__(15);
+	    overlay = __webpack_require__(19);
 	  }
 	
 	  var styles = {
@@ -847,7 +851,7 @@
 	  };
 	}
 	
-	var processUpdate = __webpack_require__(21);
+	var processUpdate = __webpack_require__(25);
 	
 	var customHandler;
 	var subscribeAllHandler;
@@ -912,10 +916,10 @@
 	  };
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, "?reload=true", __webpack_require__(9)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, "?reload=true", __webpack_require__(13)(module)))
 
 /***/ }),
-/* 9 */
+/* 13 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -932,16 +936,16 @@
 	};
 
 /***/ }),
-/* 10 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	exports.decode = exports.parse = __webpack_require__(11);
-	exports.encode = exports.stringify = __webpack_require__(12);
+	exports.decode = exports.parse = __webpack_require__(15);
+	exports.encode = exports.stringify = __webpack_require__(16);
 
 /***/ }),
-/* 11 */
+/* 15 */
 /***/ (function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -1030,7 +1034,7 @@
 	};
 
 /***/ }),
-/* 12 */
+/* 16 */
 /***/ (function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -1099,19 +1103,19 @@
 	};
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var ansiRegex = __webpack_require__(14)();
+	var ansiRegex = __webpack_require__(18)();
 	
 	module.exports = function (str) {
 		return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
 	};
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1122,7 +1126,7 @@
 	};
 
 /***/ }),
-/* 15 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1153,7 +1157,7 @@
 	  clientOverlay.style[key] = styles[key];
 	}
 	
-	var ansiHTML = __webpack_require__(16);
+	var ansiHTML = __webpack_require__(20);
 	var colors = {
 	  reset: ['transparent', 'transparent'],
 	  black: '181818',
@@ -1168,7 +1172,7 @@
 	};
 	ansiHTML.setColors(colors);
 	
-	var Entities = __webpack_require__(17).AllHtmlEntities;
+	var Entities = __webpack_require__(21).AllHtmlEntities;
 	var entities = new Entities();
 	
 	exports.showProblems = function showProblems(type, lines) {
@@ -1202,7 +1206,7 @@
 	}
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1387,20 +1391,20 @@
 	ansiHTML.reset();
 
 /***/ }),
-/* 17 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	module.exports = {
-	  XmlEntities: __webpack_require__(18),
-	  Html4Entities: __webpack_require__(19),
-	  Html5Entities: __webpack_require__(20),
-	  AllHtmlEntities: __webpack_require__(20)
+	  XmlEntities: __webpack_require__(22),
+	  Html4Entities: __webpack_require__(23),
+	  Html5Entities: __webpack_require__(24),
+	  AllHtmlEntities: __webpack_require__(24)
 	};
 
 /***/ }),
-/* 18 */
+/* 22 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1560,7 +1564,7 @@
 	module.exports = XmlEntities;
 
 /***/ }),
-/* 19 */
+/* 23 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1712,7 +1716,7 @@
 	module.exports = Html4Entities;
 
 /***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1907,7 +1911,7 @@
 	module.exports = Html5Entities;
 
 /***/ }),
-/* 21 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
