@@ -1,0 +1,21 @@
+
+.ui_calendar.style_1 .title{text-align: center;height: 0.83rem; line-height: 0.83rem;}
+.ui_calendar.style_1 .title{font-size: 0.375rem;color:#323232;font-weight: bold;background:#efefef;}
+.ui_calendar.style_1 .calendar{background: #fff;}
+.ui_calendar.style_1 .calendar:last{margin-right: 0;}
+.ui_calendar.style_1 .calendar table{width: 100%;}
+.ui_calendar.style_1 .calendar table th{height:0.625rem;color:#909090; background:#ebebeb;font-size:0.375rem;width: 14.28%;}
+.ui_calendar.style_1 .calendar table td{text-align:center;height: 1.0833rem;width: 14.28%;}
+.ui_calendar.style_1 .calendar table td a{display: table-cell;height:1.0833rem;color:#000;width: 1%;vertical-align: middle;}
+.ui_calendar.style_1 .calendar table td a span{display: inline-block;width: 100%;}
+.ui_calendar.style_1 .calendar table td a p{display: none;}
+.ui_calendar.style_1 .calendar table td a.disable{color: #c5c5c5;cursor:context-menu;}
+.ui_calendar.style_1 .calendar table td a.disable:hover{background: #fff;}
+.ui_calendar.style_1 .calendar table td a:hover{background:#daf3fe;}
+.ui_calendar.style_1 .calendar table td a.selected{background: #ff9913;color:#fff;}
+.ui_calendar.style_1 .calendar table td a.start_time,.ui_calendar.style_1 .calendar table td a.end_time{background: #1b8de5;color:#fff;}
+.ui_calendar.style_1 .calendar table td a.section_time{background: #78bbef;color:#fff;}
+.ui_calendar.style_1 .calendar table td a.start_time p,.ui_calendar.style_1 .calendar table td a.end_time p{display: inline-block;width: 100%;}
+.ui_calendar.style_1 .prev_btn{position: absolute;left: 1.7rem;top:0.82rem;width:0.3rem;height:0.3rem;line-height:0.3rem;text-align: center;background:#efefef;color:#c6c6c6;font-weight: bold;font-size: 0.24rem;font-family: simsun;}
+.ui_calendar.style_1 .next_btn{position: absolute;right: 1.7rem;top:0.82rem;width:0.3rem;height:0.3rem;line-height: 0.3rem;text-align: center;background:#efefef;color:#c6c6c6;font-weight: bold;font-size: 0.24rem;font-family: simsun;}
+.ui_calendar.style_1 .prev_btn:hover,.ui_calendar.style_1 .next_btn:hover{background: #37bbf8;color: #fff;}
