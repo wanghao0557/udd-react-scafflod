@@ -1,7 +1,7 @@
 {
   "name": "udd-h5-react-scaffold",
   "version": "1.0.0",
-  "description": "游大大h5项目脚手架",
+  "description": "h5项目脚手架",
   "main": "index.js",
   "scripts": {
     "hotel.start": "set ITEM_NAME=hotel&&set NODE_ENV=dev&&webpack",
