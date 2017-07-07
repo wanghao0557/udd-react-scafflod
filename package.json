@@ -4,8 +4,8 @@
   "description": "游大大h5项目脚手架",
   "main": "index.js",
   "scripts": {
-    "hotel.start": "cross-env NODE_ENV=dev ITEM_NAME=hotel supervisor app.js",
-    "hotel.dev": "set ITEM_NAME=hotel&&set NODE_ENV=dev&&webpack",
+    "hotel.start": "set ITEM_NAME=hotel&&set NODE_ENV=dev&&webpack",
+    "hotel.dev": "cross-env NODE_ENV=dev ITEM_NAME=hotel supervisor app.js",
     "hotel.build": "set ITEM_NAME=hotel&&webpack --config webpack.build.config.js -p"
   },
   "repository": {
