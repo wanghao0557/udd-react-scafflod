@@ -35,13 +35,14 @@ module.exports = {
 	},
 	externals: {
 		'react': 'React',
-		'react-dom': 'ReactDOM' 
+		'react-dom': 'ReactDOM',
+		'react-router': 'ReactRouter'
 	},
 	plugins: [
 		new extractTextWebpackPlugin("css/[name].css"),
 		new htmlWebpackPlugin({
 			filename: "/index.html",
-			template: './apps/' + itemName + '/index.html',
+			template: './apps/' + itemName + '/index_template.html',
 			hash: true
 		}),
 		new WebpackMd5Hash()

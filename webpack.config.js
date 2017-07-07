@@ -13,12 +13,6 @@ var set = {
 	devtool: 'cheap-module-eval-source-map'
 };
 
-if(process.env.NODE_ENV === 'build') {
-	set.outputPath = __dirname+'/dist/native-h5/'+itemName+'/';
-	set.outputPublicPath = '/'+itemName+'/';
-	set.devtool = false;
-}
-
 module.exports = {
 	entry: {
 		index: ['./apps/'+itemName+'/index.jsx', hotMiddlewareScript]
