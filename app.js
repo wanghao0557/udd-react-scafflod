@@ -1,13 +1,12 @@
-var express = require("express");
-var path = require("path");
+var express = require('express');
+var path = require('path');
 var port = process.env.PORT || 8888;
 var app = express();
 
-var webpack = require("webpack"),
-	webpackDevMiddleware = require("webpack-dev-middleware"),
-	webpackHotMiddleware = require("webpack-hot-middleware"),
-	webpackDevConfig = require("./webpack.config.js");
-
+var webpack = require('webpack'),
+	webpackDevMiddleware = require('webpack-dev-middleware'),
+	webpackHotMiddleware = require('webpack-hot-middleware'),
+	webpackDevConfig = require('./webpack.config.js');
 var compiler = webpack(webpackDevConfig);
 
 //Add headers can Access Control for cross-site Requests 跨域服务设置
@@ -38,12 +37,15 @@ app.use(webpackDevMiddleware(compiler, {
 
 app.use(webpackHotMiddleware(compiler));
 
-app.listen(port, function(){
-	console.log("localhost:8888/");
+var itemName = process.env.ITEM_NAME || '';
+
+app.listen(port, function() {
+	console.log('localhost:'+port+'/'+itemName);
 });
 
-app.use("/", express.static(path.join(__dirname, "./apps")));
+app.use('/', express.static(path.join(__dirname, './apps')));
 
-app.get("/todos", function(req, res){
-	res.sendFile('index.html', { root: path.join(__dirname, "./apps/todos") });
+app.get('/hotel', function(req, res) {
+	console.log(root);
+	res.sendFile('index.html', {root: path.join(__dirname, './apps/hotel')});
 });
