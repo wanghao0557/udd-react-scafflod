@@ -1,0 +1,38 @@
+.debug-footer{
+	position: fixed;
+	left: 0;
+	right: 0;
+	background: #fff;
+	border-top: 0.03rem solid #f00;
+	bottom: 0;
+	padding-top: 0.67rem;
+	z-index: 9999;
+	max-height: 50%;
+	overflow-y:scroll;
+	.toggle-btn{
+		position: absolute;
+		right: 0.27rem;
+		top: 0.07rem;
+	}
+	ol{
+		margin: 0;
+		padding: 0;
+		counter-reset: sectioncounter;
+	}
+	li{
+		padding: 0.13rem;
+		border-bottom: 0.03rem dotted #ddd;
+		word-wrap: break-word;
+		&:before{
+			content: "第" counter(sectioncounter) "条：";   
+			counter-increment: sectioncounter;
+			color: #f00;
+			font-weight: bold; 
+		}
+	}
+	&.close{
+		ol{
+			display: none;
+		}
+	}
+}
