@@ -37,6 +37,15 @@ app.use(webpackDevMiddleware(compiler, {
 
 app.use(webpackHotMiddleware(compiler));
 
+//定义ajax数据接口
+if(process.env.NODE_env == 'dev') {
+	var interface = require('./server/interface-local');
+	interface.init(app);
+} else {
+	var interface = require('./server/interface-server');
+	interface.init(app);
+}
+
 var itemName = process.env.ITEM_NAME || '';
 
 app.listen(port, function() {
