@@ -42,3 +42,4 @@ Middleware.prototype.post = function(paramdata, itemname, propath, call) {
 	req.write(queryPostData);
 	req.end();
 }
+module.exports=Middleware;

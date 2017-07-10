@@ -45,6 +45,7 @@ module.exports = {
 			template: './apps/' + itemName + '/index_template.html',
 			hash: true
 		}),
-		new WebpackMd5Hash()
+		new WebpackMd5Hash(),
+		new webpack.optimize.UglifyJsPlugin()
 	]
 }

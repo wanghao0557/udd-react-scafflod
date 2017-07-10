@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "hotel.start": "set ITEM_NAME=hotel&&set NODE_ENV=dev&&webpack",
-    "hotel.dev": "cross-env NODE_ENV=dev ITEM_NAME=hotel supervisor app.js",
+    "hotel.dev": "cross-env NODE_ENV=dev ITEM_NAME=hotel supervisor -w server app.js",
     "hotel.build": "set ITEM_NAME=hotel&&webpack --config webpack.build.config.js -p"
   },
   "repository": {

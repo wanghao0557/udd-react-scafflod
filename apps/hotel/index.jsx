@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
+import style from './scss/index.scss';
+
 //各个组件
 import HotelDetail from './jsx/hotel_detail.jsx';
 import HotelHome from './jsx/hotel_home.jsx';

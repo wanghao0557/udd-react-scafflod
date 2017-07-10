@@ -14,9 +14,13 @@ Interface.prototype.init = function(app) {
 }
 Interface.prototype.hotel = function() {
 	var hotel = require('./data/hotel');
-	this.app.post("/hotel/room", function(req, res){
-		 var data = hotel.room(req.body.id);
-		 res.contentType('json');
-		 res.send('data');
+	console.log(hotel);
+	this.app.post("/hotel/detail", function(req, res){
+		console.log(req.body)
+		var data = hotel.detail(req.body.id);
+		res.contentType('json');
+		res.send(data);
 	});
 }
+
+module.exports = new Interface();

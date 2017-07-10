@@ -6,7 +6,7 @@ function HotelData() {
 	}
 }
 
-HotelData.prototype.room = function() {
+HotelData.prototype.detail = function() {
 	this.success.data = {
 		id: 123,
 		name: '豪华大酒店'

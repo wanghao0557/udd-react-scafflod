@@ -59,7 +59,8 @@ module.exports = {
 	externals: {
 		'react': 'React',
 		'react-dom': 'ReactDOM',
-		'react-router': 'ReactRouter'
+		'react-router': 'ReactRouter',
+		'zepto': '$'
 	},
 	plugins: [
 		new extractTextWebpackPlugin('css/[name].css'),
@@ -69,7 +70,6 @@ module.exports = {
 			hash: true
 		}),
 		new webpack.HotModuleReplacementPlugin(),
-		new webpack.optimize.OccurenceOrderPlugin(),
-		new webpack.optimize.UglifyJsPlugin()
+		new webpack.optimize.OccurenceOrderPlugin()
 	]
 }
